@@ -7,7 +7,7 @@
   </classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/commons-logging/jars/commons-logging-1.0.4.jar">
   </classpathentry>
-  <classpathentry kind="var" path="MAVEN_REPO/myfaces/jars/jsf-api-1.0.jar">
+  <classpathentry kind="var" path="MAVEN_REPO/myfaces/jars/myfaces-jsf-api-1.0.7.jar">
   </classpathentry>
   <classpathentry kind="var" path="MAVEN_REPO/jsf-spring/jars/jsf-spring-2.6.jar">
   </classpathentry>

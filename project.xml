@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <pomVersion>3</pomVersion>
+  <repository />
+  <extend>${base.project.dir}/base-project.xml</extend>
+  <name>JSF-Spring</name>
+  <groupId>bundles</groupId>
+  <artifactId>de.mindmatters.faces.spring</artifactId>
+  <currentVersion>2.6</currentVersion>
+  <organization />
+  <inceptionYear>2004</inceptionYear>
+  <shortDescription>JSF-Spring</shortDescription>
+  <issueTrackingUrl>http://issues.idega.is</issueTrackingUrl>
+  <developers>
+    <developer>
+      <name>Gudmundur Agust Saemundsson</name>
+      <id>gummi</id>
+      <email>gummi@idega.is</email>
+      <organization>idega software</organization>
+    </developer>
+  </developers>
+  <dependencies>
+      <dependency>
+        <groupId>spring</groupId>
+        <artifactId>spring</artifactId>
+        <version>1.1</version>
+        <type>jar</type>
+        <url>http://www.springframework.org/</url>
+     </dependency>
+     <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.0.4</version>
+        <type>jar</type>
+        <url>http://jakarta.apache.org/commons/logging/</url>
+    </dependency>   
+    <dependency>
+      <groupId>myfaces</groupId>
+      <artifactId>jsf-api</artifactId>
+      <version>1.0</version>
+      <type>jar</type>
+      <url>http://java.sun.com/j2ee/javaserverfaces/</url>
+    </dependency>  
+    <dependency>
+      <groupId>jsf-spring</groupId>
+      <artifactId>jsf-spring</artifactId>
+      <version>2.6</version>
+      <type>jar</type>
+      <url>http://java.sun.com/j2ee/javaserverfaces/</url>
+      <properties>
+        <idegaweb.bundle.include>true</idegaweb.bundle.include>
+      </properties>
+    </dependency>    
+  </dependencies>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
+    <unitTest>
+      <includes>
+        <include>**/*Test.java</include>
+      </includes>
+    </unitTest>
+  </build>
+  <properties />
+</project>
+

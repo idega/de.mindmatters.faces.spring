@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	
+	<description>This is the bean defenitions and imports for the Spring framework</description>
+	
+	<!--bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename"><value>de.mindmatters.spring.web.test.SpringMessage</value></property>
+	</bean>
+	
+	<bean id="directAccessBean" class="de.mindmatters.spring.web.test.NameBean">
+		<property name="name"><value>direct access bean</value></property>
+	</bean>
+	
+	<bean id="scopedAccessBean" class="de.mindmatters.spring.web.test.NameBean" singleton="false">
+		<property name="name"><value>scoped access bean</value></property>
+	</bean>
+
+	<bean id="managedPropertyAccessBean" class="de.mindmatters.spring.web.test.NameBean" singleton="false">
+		<property name="name"><value>managed-property access bean</value></property>
+	</bean>
+	
+	<bean id="programmaticAccessBean" class="de.mindmatters.spring.web.test.NameBean" singleton="false">
+		<property name="name"><value>programmatic access bean</value></property>
+	</bean>
+	
+	<bean id="eventListener" class="de.mindmatters.spring.web.test.EventListener"/-->
+	
+</beans>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE web-app PUBLIC
+  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+  "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+	<!--
+        The filter used to publish RequestHandledEvent to Spring.
+        Should be mapped to the same url pattern than the FacesServlet.
+    -->
+    <filter>
+        <filter-name>RequestHandled</filter-name>
+        <filter-class>de.mindmatters.faces.spring.RequestHandledFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>RequestHandled</filter-name>
+        <url-pattern>*.jsf</url-pattern>
+    </filter-mapping>
+    
+    <!--
+        The listener used to load the parent application context (the spring beans).
+    -->
+    
+    <listener>
+    	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+
+	<!--
+        The declaration of your FacesServlet.
+        Map it to whatever url pattern you like.
+    -->
+    <!-- iw: done by other module (net.sourceforge.myfaces)-->
+    <!--servlet>
+        <servlet-name>FacesServlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>    
+
+    <servlet-mapping>
+        <servlet-name>FacesServlet</servlet-name>
+        <url-pattern>*.jsf</url-pattern>
+    </servlet-mapping>
+    
+    <welcome-file-list>
+    	<welcome-file>index.html</welcome-file>
+    </welcome-file-list-->
+    
+</web-app>
